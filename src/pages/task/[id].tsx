@@ -51,7 +51,10 @@ export default function Task({ item, allComments }: TaskProps) {
   async function handleComment(e: FormEvent) {
     e.preventDefault();
 
-    if (input === "") return;
+    if (input === "") {
+      toast.error("Digite um comentário!");
+      return;
+    }
 
     if (!session?.user?.email || !session?.user?.name) return;
 
