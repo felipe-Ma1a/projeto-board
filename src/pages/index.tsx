@@ -7,7 +7,7 @@ import { collection, getDocs } from "firebase/firestore";
 
 import heroImg from "../../public/assets/hero.png";
 
-import styles from "../styles/home.module.css";
+import styles from "../../styles/home.module.css";
 
 interface HomeProps {
   posts: number;
